@@ -7,10 +7,22 @@ public final class LemerGenerator extends Generator {
     private static final int C = 65536;
     private static final int X0 = 13;
 
+    /**
+     * Конструктор генератора пвсевдослучайных чисел методом Лемера
+     *
+     * @param length длина последовательности
+     */
     public LemerGenerator(final int length) {
         super(length);
     }
 
+    /**
+     * Вычисление последовательности псевдослучайных чисел
+     * с помощью метода Лемера
+     *
+     * @param length длинна последовательности
+     * @return последовательность псевдослучаных чисел
+     */
     @Override
     protected int[] calculate(final int length) {
         final int[] sequence = new int[length];

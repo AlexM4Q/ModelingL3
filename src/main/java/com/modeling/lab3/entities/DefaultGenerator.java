@@ -4,10 +4,22 @@ import java.util.Random;
 
 public final class DefaultGenerator extends Generator {
 
+    /**
+     * Конструктор стандартного(встроенного) генератора пвсевдослучайных чисел
+     *
+     * @param length длина последовательности
+     */
     public DefaultGenerator(final int length) {
         super(length);
     }
 
+    /**
+     * Вычисление последовательности псевдослучайных чисел
+     * с помощью стандартного(встроенного) генератора пвсевдослучайных чисел
+     *
+     * @param length длинна последовательности
+     * @return последовательность псевдослучаных чисел
+     */
     @Override
     protected int[] calculate(final int length) {
         final int[] sequence = new int[length];
